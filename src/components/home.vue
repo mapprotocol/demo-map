@@ -289,7 +289,7 @@ export default {
         this.selectname='Mos'
         this.selectSname='Mos'
       }else  {
-        this.walletBalance=' ';
+        this.walletBalance='1111';
         this.walletBalanceCion='';
         this.addressStr=''
       }
