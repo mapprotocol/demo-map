@@ -258,9 +258,9 @@ export default {
 
         }
         else {
-          this.balance()
-          this.amount=0;
-          this.walletBalanceCion=' '
+          this.walletBalance=' ';
+          this.walletBalanceCion='';
+          this.addressStr=''
         }
 
       }
@@ -289,7 +289,7 @@ export default {
         this.selectname='Mos'
         this.selectSname='Mos'
       }else  {
-        this.walletBalance='';
+        this.walletBalance=' ';
         this.walletBalanceCion='';
         this.addressStr=''
       }
