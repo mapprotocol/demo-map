@@ -278,18 +278,19 @@ export default {
       console.log(isInstalled)
       // this.initPage();
       //获取余额
-      this.balance()
       //获得币种
       let chainID = await web3.eth.getChainId();
       if (chainID == '1000') {
+        this.balance()
         this.walletBalanceCion='MOS'
         this.selectname='Duck'
       }else if (chainID=='1001') {
+        this.balance()
         this.walletBalanceCion='DUC'
         this.selectname='Mos'
         this.selectSname='Mos'
       }else  {
-        this.walletBalance='1111';
+        this.walletBalance=' ';
         this.walletBalanceCion='';
         this.addressStr=''
       }

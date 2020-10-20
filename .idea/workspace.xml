@@ -2,6 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b8a4641d-8796-4a50-af11-8a4ae3fbcf92" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/1a20b1f28ae7b6f85fe0a507eb5ff9e4.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/1a20b1f28ae7b6f85fe0a507eb5ff9e4.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.cache/vue-loader/91a1f9075294b40642167ad06ad3faeb.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/vue-loader/91a1f9075294b40642167ad06ad3faeb.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.cache/vue-loader/94f1b1ea6f2f6f6516dcdafea442d138.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/vue-loader/94f1b1ea6f2f6f6516dcdafea442d138.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.cache/vue-loader/b645add2137cb8bceedef31879a031ad.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/vue-loader/b645add2137cb8bceedef31879a031ad.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.cache/vue-loader/cac61a541eef66b4ca3a649f5f2cb24c.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/vue-loader/cac61a541eef66b4ca3a649f5f2cb24c.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.cache/vue-loader/ecf68c4ad57f3c39976e88301254cf2e.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/vue-loader/ecf68c4ad57f3c39976e88301254cf2e.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/home.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -40,7 +47,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1603165610835</updated>
-      <workItem from="1603165611940" duration="3345000" />
+      <workItem from="1603165611940" duration="3701000" />
     </task>
     <servers />
   </component>
