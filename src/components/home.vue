@@ -118,7 +118,7 @@ export default {
       mouse:'' ,//mouse
       duck:'',//duck
       addressSend: "",//对方账户
-      walletBalance: 11,//账户余额
+      walletBalance: 0,//账户余额
       addressStr: '',//我的账户地址
       send: false,//send下拉框显示
       asset: false,//asset下拉框显示
@@ -181,6 +181,7 @@ export default {
         const value=new BigNumber(this.amount)
         console.log(`chainID`, chainID)
         if (chainID == '1000') {
+          this.balance()
           // console.log(chainID,55555555)
           //本币的情况
           if (this.selectname=='Duck'&& this.selectSname=='Mos'){
@@ -197,9 +198,10 @@ export default {
               nonce: 1
             })
             console.log('sendTrans', sendTrans)
-          }else {
+          }
+          else {
             //调用赎回方法
-            console.log(88888888888888899999999999)
+            // console.log(88888888888888899999999999)
             let withdraw = await myContract.methods.withdraw(receiver_address, value).encodeABI()
             console.log('withdraw', withdraw)
             console.log(contractAddress, 99999999999)
@@ -215,7 +217,8 @@ export default {
             console.log('sendTransReturn', sendTransReturn)
           }
 
-        } else {
+        } else if(chainID==='1001') {
+          this.balance()
           this.walletBalanceCion='DUC'
           console.log(this.walletBalanceCion,7777777777)
           //本币的情况
@@ -233,7 +236,8 @@ export default {
              nonce: 1
            })
            console.log('sendTrans', sendTrans)
-         }else {
+         }
+         else{
            //调用赎回方法
            // var value = this.amount;
            console.log(value,'value')
@@ -253,6 +257,11 @@ export default {
          }
 
         }
+        else {
+          this.balance()
+          this.amount=0;
+          this.walletBalanceCion=' '
+        }
 
       }
     },
@@ -267,31 +276,35 @@ export default {
       //检查是否注入web3
       const isInstalled = checkEthereum();
       console.log(isInstalled)
-      //请求用户账号授权
-      //返回一个Promise对象，其解析值为以太坊地址数组
-      let addresses = await window.ethereum.enable();
-      let address = addresses[0];
-      this.addressStr = address;
       // this.initPage();
-
-      //获取账户余额
-
-      // console.log(this.walletBalance, 11111)
-     var balance=await web3.eth.getBalance(address);
-      this.walletBalance=balance
-
-      console.log(balance,333333)
+      //获取余额
+      this.balance()
       //获得币种
       let chainID = await web3.eth.getChainId();
       if (chainID == '1000') {
         this.walletBalanceCion='MOS'
         this.selectname='Duck'
-      }else  {
+      }else if (chainID=='1001') {
         this.walletBalanceCion='DUC'
         this.selectname='Mos'
         this.selectSname='Mos'
+      }else  {
+        this.walletBalance='';
+        this.walletBalanceCion='';
+        this.addressStr=''
       }
 
+    },
+    //获取账户余额
+    async balance(){
+      //请求用户账号授权
+      //返回一个Promise对象，其解析值为以太坊地址数组
+      let addresses = await window.ethereum.enable();
+      let address = addresses[0];
+      this.addressStr = address;
+      // console.log(this.walletBalance, 11111)
+      var balance=await web3.eth.getBalance(address);
+      this.walletBalance=balance/1000000000000000000
     },
     // 增加数量
     actionAdd() {
