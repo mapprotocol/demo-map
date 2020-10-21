@@ -59,7 +59,8 @@
           <div>
             <div @click="showSend()" class="home-dropdown">
               <div style="margin-left: 20px">{{ selectname }}</div>
-              <img src="../assets/arrow-bottom.png"/>
+              <img v-show="send==false" src="../assets/arrow-bottom.png"/>
+              <img v-show="send==true" src="../assets/arrow-top.png">
             </div>
             <!--              下拉框-->
             <div v-show="send==true" class="home-dropdown-send">
@@ -79,7 +80,8 @@
           <div>
             <div @click="showAsste()" class="home-dropdown">
               <div style="margin-left: 20px">{{ selectSname }}</div>
-              <img src="../assets/arrow-bottom.png"/>
+              <img v-show="asset==false" src="../assets/arrow-bottom.png"/>
+              <img v-show="asset==true" src="../assets/arrow-top.png"/>
             </div>
             <!--              下拉框-->
             <div v-show="asset==true" class="home-dropdown-send">
@@ -379,7 +381,7 @@ body {
   position: relative;
   width: 100%;
   height: 100vh;
-  background-color: #172029;
+  background-color: #14212E;
   color: white;
 }
 
@@ -403,7 +405,7 @@ body {
   font-size: 20px;
   font-family: Arial-BoldMT, Arial;
   font-weight: normal;
-  color: #37A2F0;
+  color:#00ECFF;
   line-height: 23px;
 }
 
@@ -418,23 +420,26 @@ body {
   }
 
   .home-get-input {
+    cursor: pointer;
+    z-index: 1000;
     outline-style: none;
     border: 0;
     color: white;
     width: 50%;
     height: 24px;
     background: #172029;
-    border: 1px solid #2D7CB5;
+    border: 1px solid #00ECFF;
 
   }
 
   .home-get-btn {
+    z-index: 1000;
     border: 0;
-    color: white;
+    color: black;
     margin-left: 13px;
     width: 15%;
     height: 30px;
-    background: #0C6CB2;
+    background: #00ECFF;
     outline-style: none;
     border: 0;
     //border: 5px #0C6CB2 solid;
@@ -471,7 +476,7 @@ body {
 
   .home-balance-num {
     font-family: Arial-BoldMT, Arial;
-    color: #77C3FB;
+    color: #00ECFF;
     font-size: 20px;
   }
 }
@@ -490,6 +495,7 @@ body {
   }
 
   .home-dropdown {
+    cursor: pointer;
     font-family: Arial-ItalicMT, Arial;
     font-weight: normal;
     margin-top: 7px;
@@ -500,7 +506,7 @@ body {
     width: 80%;
     height: 34px;
     background: #172029;
-    border: 1px solid #2D7CB5;
+    border: 1px solid #00ECFF;
 
     img {
       width: 10px;
@@ -511,11 +517,12 @@ body {
 }
 
 .home-dropdown-send {
+  cursor: pointer;
   position: absolute;
   //right: 0;
   z-index: 999;
   width: 80%;
-  border: 1px solid #2D7CB5;
+  border: 1px solid #00ECFF;
   font-family: Arial-ItalicMT, Arial;
   font-weight: normal;
 }
@@ -525,7 +532,8 @@ body {
   padding-left: 20px;
   height: 34px;
   line-height: 34px;
-  background: #638AB0;
+  color: black;
+  background: #DBF0F1;
 }
 
 .home-drop {
@@ -554,6 +562,7 @@ body {
   }
 
   .home-address-input {
+    cursor: pointer;
     outline-style: none;
     border: 0;
     padding-left: 20px;
@@ -563,7 +572,7 @@ body {
     margin-top: 7px;
     color: white;
     background: #172029;
-    border: 1px solid #2D7CB5;
+    border: 1px solid #00ECFF;
   }
 }
 
@@ -580,9 +589,10 @@ body {
   margin-right: 20px;
   color: white;
   background: #172029;
-  border: 1px solid #2D7CB5;
+  border: 1px solid #00ECFF;
 
   .home-amount-input {
+    cursor: pointer;
     width: 97%;
     height: 30px;
     background-color: #172029;
@@ -609,14 +619,15 @@ body {
   flex-direction: column;
   align-items: center;
   padding-top: 75px;
-
+  cursor: pointer;
   button {
+    z-index: 1000;
     outline-style: none;
     border: 0;
-    color: white;
+    color: black;
     width: 40%;
     height: 46px;
-    background: #0C6CB2;
+    background:#00ECFF;
     border-radius: 5px;
     cursor: pointer;
   }

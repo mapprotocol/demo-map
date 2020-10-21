@@ -18,11 +18,11 @@ export default {
 
 <style>
 #app {
-  max-width: 100%;
-  height: 100%;
-  overflow-x: hidden;
-  color: #fff;
-  background-color: #172029;
+  /*max-width: 100%;*/
+  /*height: 100%;*/
+  /*overflow-x: hidden;*/
+  /*color: #fff;*/
+  /*background-color: #172029;*/
   /*font-family: Avenir, Helvetica, Arial, sans-serif;*/
   /*-webkit-font-smoothing: antialiased;*/
   /*-moz-osx-font-smoothing: grayscale;*/
