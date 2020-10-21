@@ -171,14 +171,23 @@ export default {
     //mouse 获取
    async actionGetMouse() {
      console.log(1)
-     let result = await this.$http.getBalance({chain:'mouse',address:this.mouse});
-     console.log(result,'结果')
+     if (this.mouse==''){
+       this.$toast('请填入地址')
+     }else {
+       let result = await this.$http.getBalance({chain:'mouse',address:this.mouse});
+       console.log(result,'结果')
+     }
     },
     //duck 获取
    async actionGetDuck() {
       console.log(1)
-      let result = await this.$http.getBalance({chain:'duck',address:this.duck});
-      console.log(result,'结果')
+     if (this.duck==''){
+       this.$toast('请填入地址')
+     }else  {
+       let result = await this.$http.getBalance({chain:'duck',address:this.duck});
+       console.log(result,'结果')
+     }
+
     },
     //交易
     async actionAmount() {
