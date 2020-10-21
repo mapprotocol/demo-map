@@ -185,7 +185,7 @@ export default {
       console.log(this.addressSend)
       //交易前判断
       if (this.addressSend == '' || this.amount == '') {
-        return alert('输入框不能为空')
+        return this.$toast('输入框不能为空')
       } else {
 
         // 合约地址
