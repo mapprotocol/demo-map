@@ -1,5 +1,24 @@
 <template>
   <div class="home">
+<!--    粒子背景-->
+    <vue-particles
+        color="#dedede"
+        :particleOpacity="0.7"
+        :particlesNumber="80"
+        shapeType="circle"
+        :particleSize="4"
+        linesColor="#dedede"
+        :linesWidth="1"
+        :lineLinked="true"
+        :lineOpacity="0.4"
+        :linesDistance="150"
+        :moveSpeed="3"
+        :hoverEffect="true"
+        hoverMode="grab"
+        :clickEffect="true"
+        clickMode="push"
+    >
+    </vue-particles>
     <div class="content">
       <!--        链接部分-->
       <div class="home-top">
@@ -104,6 +123,7 @@
 </template>
 
 <script>
+import ('@/css/login.css')
 import {checkEthereum} from '@/utils/tool'
 const Web3 = require('web3') //引入web3
 const web3 = new Web3(window.web3.currentProvider);
