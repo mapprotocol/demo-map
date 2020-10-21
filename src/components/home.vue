@@ -397,11 +397,14 @@ body {
   justify-content: space-between;
 
   .home-top-content {
+  position: relative;
     flex: 1;
   }
 }
 
 .home-a {
+  z-index: 1000;
+  cursor: pointer;
   font-size: 20px;
   font-family: Arial-BoldMT, Arial;
   font-weight: normal;
