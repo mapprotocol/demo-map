@@ -21,12 +21,6 @@
   <component name="ChangeListManager">
     <list default="true" id="b8a4641d-8796-4a50-af11-8a4ae3fbcf92" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/ebdd8025cf6966c26f8d23c53543a44e.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/ebdd8025cf6966c26f8d23c53543a44e.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/vue-loader/0cb56c597a2ae9dbe0ab9637adb46c76.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/vue-loader/0cb56c597a2ae9dbe0ab9637adb46c76.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/vue-loader/786ec24330981cb1ae90abc98f4fa6e8.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/vue-loader/786ec24330981cb1ae90abc98f4fa6e8.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/vue-loader/7996c6c0bb7fd824bb47e4890bf733a1.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/vue-loader/7996c6c0bb7fd824bb47e4890bf733a1.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/vue-loader/886b2d4c35934b60868e5a3c2179fe92.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/vue-loader/886b2d4c35934b60868e5a3c2179fe92.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/vue-loader/eae856803f5524a6b691d75c608bacea.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/vue-loader/eae856803f5524a6b691d75c608bacea.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/home.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -67,7 +61,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1603165610835</updated>
-      <workItem from="1603165611940" duration="17652000" />
+      <workItem from="1603165611940" duration="20029000" />
     </task>
     <servers />
   </component>
@@ -90,19 +84,23 @@
       <screen x="0" y="23" width="1440" height="825" />
     </state>
     <state x="421" y="190" width="598" height="490" key="find.popup/0.23.1440.825@0.23.1440.825" timestamp="1603276551463" />
+    <state x="385" y="172" width="670" height="676" key="search.everywhere.popup" timestamp="1603352874527">
+      <screen x="0" y="23" width="1440" height="825" />
+    </state>
+    <state x="385" y="172" width="670" height="676" key="search.everywhere.popup/0.23.1440.825@0.23.1440.825" timestamp="1603352874527" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/components/home.vue</url>
-          <line>257</line>
+          <line>262</line>
           <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/components/home.vue</url>
-          <line>253</line>
+          <line>258</line>
           <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="5" />
         </line-breakpoint>

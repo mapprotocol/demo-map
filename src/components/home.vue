@@ -213,7 +213,9 @@ export default {
         const value = new BigNumber(this.amount)
         console.log(value,'valuevaluevlaue')
         console.log(`chainID`, chainID)
+        //mouse链
         if (chainID == '1000') {
+          //重新获取余额
           this.balance()
           // console.log(chainID,55555555)
           //本币的情况
@@ -250,7 +252,10 @@ export default {
             console.log('sendTransReturn', sendTransReturn)
           }
 
-        } else if (chainID == '1001') {
+        }
+        //duck链
+        else if (chainID == '1001') {
+          //重新获取余额
           this.balance()
           this.walletBalanceCion = 'DUC'
           console.log(this.walletBalanceCion, 7777777777)
@@ -290,7 +295,9 @@ export default {
             console.log('sendTransReturn', sendTransReturn)
           }
 
-        } else {
+        }
+        //非mouse duck链时
+        else {
           this.walletBalance = ' ';
           this.walletBalanceCion = '';
           this.addressStr = ''
