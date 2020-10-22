@@ -272,6 +272,7 @@ export default {
             //调用赎回方法
             // var value = this.amount;
             console.log(value, 'value')
+            const value = new BigNumber(this.amount)
             let withdraw = await myContract.methods.withdraw(receiver_address, value).encodeABI()
             console.log('withdraw', withdraw)
             console.log(contractAddress, 99999999999)
