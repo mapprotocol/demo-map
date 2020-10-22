@@ -61,7 +61,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1603165610835</updated>
-      <workItem from="1603165611940" duration="20029000" />
+      <workItem from="1603165611940" duration="20787000" />
     </task>
     <servers />
   </component>
@@ -94,13 +94,13 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/components/home.vue</url>
-          <line>262</line>
+          <line>263</line>
           <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/components/home.vue</url>
-          <line>258</line>
+          <line>259</line>
           <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="5" />
         </line-breakpoint>

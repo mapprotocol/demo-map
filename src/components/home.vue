@@ -130,8 +130,8 @@ import {checkEthereum} from '@/utils/tool'
 const Web3 = require('web3') //引入web3
 const web3 = new Web3(window.web3.currentProvider);
 const contractJson = require('../abi/lock.json')
-import BigNumber from 'bignumber.js'
-//var Decimal = require('decimal'); //十进制 小数点
+// import BigNumber from 'bignumber.js'
+const Decimal = require('decimal.js'); //十进制 小数点
 // const contractJsonReturn=require('../abi/token.json')
 export default {
   name: 'HelloWorld',
@@ -210,7 +210,8 @@ export default {
         //mos链
         let chainID = await web3.eth.getChainId()
         // var value = this.amount;
-        const value = new BigNumber(this.amount)
+        const value = new Decimal(this.amount).toFixed()
+        // const value = new BigNumber(this.amount)
         console.log(value,'valuevaluevlaue')
         console.log(`chainID`, chainID)
         //mouse链
