@@ -67,7 +67,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1603165610835</updated>
-      <workItem from="1603165611940" duration="10630000" />
+      <workItem from="1603165611940" duration="16486000" />
     </task>
     <servers />
   </component>
@@ -86,17 +86,17 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state x="421" y="190" width="598" height="490" key="find.popup" timestamp="1603252120414">
+    <state x="421" y="190" width="598" height="490" key="find.popup" timestamp="1603276551463">
       <screen x="0" y="23" width="1440" height="825" />
     </state>
-    <state x="421" y="190" width="598" height="490" key="find.popup/0.23.1440.825@0.23.1440.825" timestamp="1603252120414" />
+    <state x="421" y="190" width="598" height="490" key="find.popup/0.23.1440.825@0.23.1440.825" timestamp="1603276551463" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/components/home.vue</url>
-          <line>255</line>
+          <line>256</line>
           <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="1" />
         </line-breakpoint>

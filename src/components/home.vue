@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-<!--    粒子背景-->
+    <!--        粒子背景-->
     <vue-particles
         color="#dedede"
         :particleOpacity="0.7"
@@ -43,10 +43,10 @@
       <!--        余额部分-->
       <div class="home-balance">
         <span class="home-balance-text">Your Balance：</span>
-        <span class="home-balance-num">{{ walletBalance }} {{walletBalanceCion}} </span>
+        <span class="home-balance-num">{{ walletBalance }} {{ walletBalanceCion }} </span>
 
       </div>
-<!--      个人地址-->
+      <!--        个人地址-->
       <div class="home-balance">
         <span class="home-balance-text">Your Address：</span>
         <span class="home-balance-num"><span>{{ addressStr }}</span></span>
@@ -116,7 +116,7 @@
           <span @click.stop="actionMultiply()">Wei</span>
         </div>
       </div>
-      <!--       交易-->
+      <!--        交易-->
       <div class="home-btn">
         <button @click="actionAmount()">Transfer {{ amount }} Mos to Duck</button>
       </div>
@@ -137,8 +137,8 @@ export default {
   name: 'HelloWorld',
   data() {
     return {
-      mouse:'' ,//mouse
-      duck:'',//duck
+      mouse: '',//mouse
+      duck: '',//duck
       addressSend: "",//对方账户
       walletBalance: 0,//账户余额
       addressStr: '',//我的账户地址
@@ -146,7 +146,7 @@ export default {
       asset: false,//asset下拉框显示
       selectSname: "Duck",
       amount: '',//输入金额
-      walletBalanceCion:"MOS",//币种
+      walletBalanceCion: "MOS",//币种
       sendSList: [
         {
           name: "Duck",
@@ -169,28 +169,29 @@ export default {
   },
   methods: {
     //mouse 获取
-   async actionGetMouse() {
-     console.log(1)
-     if (this.mouse==''){
-       this.$toast('请填入地址')
-     }else {
-       let result = await this.$http.getBalance({chain:'mouse',address:this.mouse});
-       console.log(result,'结果')
-     }
+    async actionGetMouse() {
+      console.log(1)
+      if (this.mouse == '') {
+        this.$toast('请填入地址')
+      } else {
+        let result = await this.$http.getBalance({chain: 'mouse', address: this.mouse});
+        console.log(result, '结果')
+      }
     },
     //duck 获取
-   async actionGetDuck() {
+    async actionGetDuck() {
       console.log(1)
-     if (this.duck==''){
-       this.$toast('请填入地址')
-     }else  {
-       let result = await this.$http.getBalance({chain:'duck',address:this.duck});
-       console.log(result,'结果')
-     }
+      if (this.duck == '') {
+        this.$toast('请填入地址')
+      } else {
+        let result = await this.$http.getBalance({chain: 'duck', address: this.duck});
+        console.log(result, '结果')
+      }
 
     },
     //交易
     async actionAmount() {
+      console.log(1)
       console.log(this.addressSend)
       //交易前判断
       if (this.addressSend == '' || this.amount == '') {
@@ -204,18 +205,18 @@ export default {
         var receiver_address = this.addressSend;
 
         // 定义锁币合约
-        let myContract =await new web3.eth.Contract(contractJson, contractAddress);
-        console.log(contractAddress,666666666)
+        let myContract = await new web3.eth.Contract(contractJson, contractAddress);
+        console.log(contractAddress, 666666666)
         //mos链
         let chainID = await web3.eth.getChainId()
         // var value = this.amount;
-        const value=new BigNumber(this.amount)
+        const value = new BigNumber(this.amount)
         console.log(`chainID`, chainID)
         if (chainID == '1000') {
           this.balance()
           // console.log(chainID,55555555)
           //本币的情况
-          if (this.selectname=='Duck'&& this.selectSname=='Mos'){
+          if (this.selectname == 'Duck' && this.selectSname == 'Mos') {
             //调用合约锁币方法
             let lock = await myContract.methods.lock(receiver_address).encodeABI();
             // console.log(`lock`, lock, 222222)
@@ -232,7 +233,7 @@ export default {
           }
           else {
             //调用赎回方法
-            // console.log(88888888888888899999999999)
+            console.log(88888888888888899999999999)
             let withdraw = await myContract.methods.withdraw(receiver_address, value).encodeABI()
             console.log('withdraw', withdraw)
             console.log(contractAddress, 99999999999)
@@ -248,50 +249,48 @@ export default {
             console.log('sendTransReturn', sendTransReturn)
           }
 
-        } else if(chainID==='1001') {
+        } else if (chainID == '1001') {
           this.balance()
-          this.walletBalanceCion='DUC'
-          console.log(this.walletBalanceCion,7777777777)
+          this.walletBalanceCion = 'DUC'
+          console.log(this.walletBalanceCion, 7777777777)
           //本币的情况
-         if (this.selectname=='Mos'&&this.selectSname=='Duck'){
-           //调用合约锁币方法
-           let lock = await myContract.methods.lock(receiver_address).encodeABI();
-           console.log(`lock`, lock, 222222)
+          if (this.selectname == 'Mos' && this.selectSname == 'Duck') {
+            //调用合约锁币方法
+            let lock = await myContract.methods.lock(receiver_address).encodeABI();
+            console.log(`lock`, lock, 222222)
 
-           //发送锁币交易
-           const sendTrans = await web3.eth.sendTransaction({
-             from: this.addressStr,
-             to: contractAddress,
-             value: this.amount,
-             data: lock,
-             nonce: 1
-           })
-           console.log('sendTrans', sendTrans)
-         }
-         else{
-           //调用赎回方法
-           // var value = this.amount;
-           console.log(value,'value')
-           let withdraw = await myContract.methods.withdraw(receiver_address, value).encodeABI()
-           console.log('withdraw', withdraw)
-           console.log(contractAddress, 99999999999)
+            //发送锁币交易
+            const sendTrans = await web3.eth.sendTransaction({
+              from: this.addressStr,
+              to: contractAddress,
+              value: this.amount,
+              data: lock,
+              nonce: 1
+            })
+            console.log('sendTrans', sendTrans)
+          } else {
+            //调用赎回方法
+            // var value = this.amount;
+            console.log(value, 'value')
+            let withdraw = await myContract.methods.withdraw(receiver_address, value).encodeABI()
+            console.log('withdraw', withdraw)
+            console.log(contractAddress, 99999999999)
 
-           //定义赎回交易
-           const sendTransReturn = await web3.eth.sendTransaction({
-             from: this.addressStr,
-             to: contractAddress,
-             value: 0,
-             data: withdraw,
-             nonce: 1
-           })
-           console.log('sendTransReturn', sendTransReturn)
-         }
+            //定义赎回交易
+            const sendTransReturn = await web3.eth.sendTransaction({
+              from: this.addressStr,
+              to: contractAddress,
+              value: 0,
+              data: withdraw,
+              nonce: 1
+            })
+            console.log('sendTransReturn', sendTransReturn)
+          }
 
-        }
-        else {
-          this.walletBalance=' ';
-          this.walletBalanceCion='';
-          this.addressStr=''
+        } else {
+          this.walletBalance = ' ';
+          this.walletBalanceCion = '';
+          this.addressStr = ''
         }
 
       }
@@ -300,7 +299,7 @@ export default {
     actionMultiply() {
       this.amount = this.amount * 1000000000000000000
     },
-    //调用
+    //调用web3
     async connectWallet() {
       console.log(web3.eth.getChainId())
       // console.log(this.addressSend, 88888)
@@ -313,44 +312,30 @@ export default {
       let chainID = await web3.eth.getChainId();
       if (chainID == '1000') {
         this.balance()
-        this.walletBalanceCion='MOS'
-        this.selectname='Duck'
-      }else if (chainID=='1001') {
+        this.walletBalanceCion = 'MOS'
+        this.selectname = 'Duck'
+      } else if (chainID == '1001') {
         this.balance()
-        this.walletBalanceCion='DUC'
-        this.selectname='Mos'
-        this.selectSname='Mos'
-      }else  {
-        this.walletBalance=' ';
-        this.walletBalanceCion='';
-        this.addressStr=''
+        this.walletBalanceCion = 'DUC'
+        this.selectname = 'Mos'
+        this.selectSname = 'Mos'
+      } else {
+        this.walletBalance = ' ';
+        this.walletBalanceCion = '';
+        this.addressStr = ''
       }
 
     },
     //获取账户余额
-    async balance(){
+    async balance() {
       //请求用户账号授权
       //返回一个Promise对象，其解析值为以太坊地址数组
       let addresses = await window.ethereum.enable();
       let address = addresses[0];
       this.addressStr = address;
       // console.log(this.walletBalance, 11111)
-      var balance=await web3.eth.getBalance(address);
-      this.walletBalance=balance/1000000000000000000
-    },
-    // 增加数量
-    actionAdd() {
-      console.log(this.amount)
-      this.amount = parseInt(this.amount) + 1;
-    },
-    // 减少数量
-    actionReduce() {
-      console.log(this.amount)
-      parseInt(this.amount)
-      this.amount = parseInt(this.amount - 1);
-      if (this.amount <= 0) {
-        this.amount = 0
-      }
+      var balance = await web3.eth.getBalance(address);
+      this.walletBalance = balance / 1000000000000000000
     },
     // 展示下拉框
     showAsste() {
@@ -406,7 +391,7 @@ body {
   justify-content: space-between;
 
   .home-top-content {
-  position: relative;
+    position: relative;
     flex: 1;
   }
 }
@@ -417,7 +402,7 @@ body {
   font-size: 20px;
   font-family: Arial-BoldMT, Arial;
   font-weight: normal;
-  color:#00ECFF;
+  color: #00ECFF;
   line-height: 23px;
 }
 
@@ -632,6 +617,7 @@ body {
   align-items: center;
   padding-top: 75px;
   cursor: pointer;
+
   button {
     z-index: 1000;
     outline-style: none;
@@ -639,7 +625,7 @@ body {
     color: black;
     width: 40%;
     height: 46px;
-    background:#00ECFF;
+    background: #00ECFF;
     border-radius: 5px;
     cursor: pointer;
   }
