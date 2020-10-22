@@ -211,6 +211,7 @@ export default {
         let chainID = await web3.eth.getChainId()
         // var value = this.amount;
         const value = new BigNumber(this.amount)
+        console.log(value,'valuevaluevlaue')
         console.log(`chainID`, chainID)
         if (chainID == '1000') {
           this.balance()
@@ -271,8 +272,9 @@ export default {
           } else {
             //调用赎回方法
             // var value = this.amount;
-            console.log(value, 'value')
-            const value = new BigNumber(this.amount)
+            console.log(77777778888888888)
+            // const value = new BigNumber(this.amount)
+            console.log(value, 'value',333333344444444)
             let withdraw = await myContract.methods.withdraw(receiver_address, value).encodeABI()
             console.log('withdraw', withdraw)
             console.log(contractAddress, 99999999999)
