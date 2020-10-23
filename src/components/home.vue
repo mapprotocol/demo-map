@@ -386,8 +386,8 @@ body {
   position: relative;
   width: 100%;
   height: 100vh;
-  background-color: #14212E;
-  color: white;
+  background-color: white;
+  color: black;
 }
 
 .content {
@@ -413,7 +413,7 @@ body {
   font-size: 20px;
   font-family: Arial-BoldMT, Arial;
   font-weight: normal;
-  color: #00ECFF;
+  color: #0581C4;
   line-height: 23px;
 }
 
@@ -435,19 +435,18 @@ body {
     color: white;
     width: 50%;
     height: 24px;
-    background: #172029;
-    border: 1px solid #00ECFF;
+    border: 1px solid #0581C4;
 
   }
 
   .home-get-btn {
     z-index: 1000;
     border: 0;
-    color: black;
+    color: white;
     margin-left: 13px;
     width: 15%;
     height: 30px;
-    background: #00ECFF;
+    background: #0581C4;
     outline-style: none;
     border: 0;
     //border: 5px #0C6CB2 solid;
@@ -460,7 +459,7 @@ body {
   margin-top: 50px;
   width: 100%;
   height: 1px;
-  border-top: 1px #11ADB1 dashed;
+  border-top: 1px #0581C4 dashed;
 }
 
 .home-middle {
@@ -478,13 +477,13 @@ body {
     font-size: 20px;
     font-family: Arial-BoldMT, Arial;
     font-weight: normal;
-    color: #FFFFFF;
+    color: black;
     line-height: 23px;
   }
 
   .home-balance-num {
     font-family: Arial-BoldMT, Arial;
-    color: #00ECFF;
+    color: #0581C4;
     font-size: 20px;
   }
 }
@@ -498,7 +497,7 @@ body {
     font-size: 14px;
     font-family: PingFangSC-Semibold, PingFang SC;
     font-weight: 600;
-    color: #FFFFFF;
+    color: black;
     line-height: 20px;
   }
 
@@ -513,8 +512,7 @@ body {
     justify-content: space-between;
     width: 80%;
     height: 34px;
-    background: #172029;
-    border: 1px solid #00ECFF;
+    border: 1px solid #0581C4;
 
     img {
       width: 10px;
@@ -530,7 +528,7 @@ body {
   //right: 0;
   z-index: 999;
   width: 80%;
-  border: 1px solid #00ECFF;
+  border: 1px solid #0581C4;
   font-family: Arial-ItalicMT, Arial;
   font-weight: normal;
 }
@@ -541,14 +539,14 @@ body {
   height: 34px;
   line-height: 34px;
   color: black;
-  background: #DBF0F1;
+  background: #DBDBDB;
 }
 
 .home-drop {
+  background-color: #fff;
   padding-left: 20px;
   height: 34px;
   line-height: 34px;
-  background: #172029;
 }
 
 .home-address {
@@ -579,8 +577,7 @@ body {
     height: 34px;
     margin-top: 7px;
     color: white;
-    background: #172029;
-    border: 1px solid #00ECFF;
+    border: 1px solid #0581C4;
   }
 }
 
@@ -596,14 +593,12 @@ body {
   padding-right: 20px;
   margin-right: 20px;
   color: white;
-  background: #172029;
-  border: 1px solid #00ECFF;
+  border: 1px solid #0581C4;
 
   .home-amount-input {
     cursor: pointer;
     width: 97%;
     height: 30px;
-    background-color: #172029;
     outline-style: none;
     border: 0;
     color: white;
@@ -633,10 +628,10 @@ body {
     z-index: 1000;
     outline-style: none;
     border: 0;
-    color: black;
+    color: white;
     width: 40%;
     height: 46px;
-    background: #00ECFF;
+    background: #0581C4;
     border-radius: 5px;
     cursor: pointer;
   }

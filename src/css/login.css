@@ -7,7 +7,7 @@ body {
   width:100%;
 
   /*Fallback if gradeints don't work */
-  background: #14212E;
+  background: white;
   /*Linear gradient... */
   /*background:#14212E;*/
 }
