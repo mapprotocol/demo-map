@@ -27,10 +27,7 @@
       <change beforePath="$PROJECT_DIR$/node_modules/.cache/vue-loader/4ab3a6d3d1e50ed1cedbd1f067e194c5.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/vue-loader/4ab3a6d3d1e50ed1cedbd1f067e194c5.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/node_modules/.cache/vue-loader/59b6e006c857ca5c879a2a4ef2bdcca3.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/vue-loader/59b6e006c857ca5c879a2a4ef2bdcca3.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/node_modules/.cache/vue-loader/ff1cbdd068d1f09e743f27d88297497a.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/vue-loader/ff1cbdd068d1f09e743f27d88297497a.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/arrow-bottom.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/arrow-bottom.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/arrow-top.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/arrow-top.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/home.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/login.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +45,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/assets" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -57,8 +54,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/src/assets" />
+      <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/public" />
     </key>
   </component>
@@ -72,7 +69,8 @@
       <updated>1603165610835</updated>
       <workItem from="1603165611940" duration="22821000" />
       <workItem from="1603425249654" duration="156000" />
-      <workItem from="1603448808544" duration="1427000" />
+      <workItem from="1603448808544" duration="1626000" />
+      <workItem from="1603451501269" duration="634000" />
     </task>
     <servers />
   </component>

@@ -432,7 +432,6 @@ body {
     z-index: 1000;
     outline-style: none;
     border: 0;
-    color: white;
     width: 50%;
     height: 24px;
     border: 1px solid #0581C4;
@@ -576,7 +575,6 @@ body {
     width: 80%;
     height: 34px;
     margin-top: 7px;
-    color: white;
     border: 1px solid #0581C4;
   }
 }
@@ -592,7 +590,6 @@ body {
   padding-left: 20px;
   padding-right: 20px;
   margin-right: 20px;
-  color: white;
   border: 1px solid #0581C4;
 
   .home-amount-input {
@@ -601,7 +598,6 @@ body {
     height: 30px;
     outline-style: none;
     border: 0;
-    color: white;
   }
 
   .home-amount-arrow {
