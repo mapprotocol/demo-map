@@ -21,12 +21,6 @@
   <component name="ChangeListManager">
     <list default="true" id="b8a4641d-8796-4a50-af11-8a4ae3fbcf92" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/2656b84872fe71a41e815625fb80cbb4.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/2656b84872fe71a41e815625fb80cbb4.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/vue-loader/0be7032a6d1f48a1a40419b722f6117c.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/vue-loader/0be7032a6d1f48a1a40419b722f6117c.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/vue-loader/3f01f22d5d868418898939e42601750a.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/vue-loader/3f01f22d5d868418898939e42601750a.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/vue-loader/4ab3a6d3d1e50ed1cedbd1f067e194c5.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/vue-loader/4ab3a6d3d1e50ed1cedbd1f067e194c5.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/vue-loader/59b6e006c857ca5c879a2a4ef2bdcca3.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/vue-loader/59b6e006c857ca5c879a2a4ef2bdcca3.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/vue-loader/ff1cbdd068d1f09e743f27d88297497a.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/vue-loader/ff1cbdd068d1f09e743f27d88297497a.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/home.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -70,7 +64,10 @@
       <workItem from="1603165611940" duration="22821000" />
       <workItem from="1603425249654" duration="156000" />
       <workItem from="1603448808544" duration="1626000" />
-      <workItem from="1603451501269" duration="634000" />
+      <workItem from="1603451501269" duration="2005000" />
+      <workItem from="1604045411877" duration="112000" />
+      <workItem from="1604045570538" duration="711000" />
+      <workItem from="1604460111077" duration="128000" />
     </task>
     <servers />
   </component>
@@ -90,10 +87,11 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="421" y="190" width="598" height="490" key="find.popup" timestamp="1603276551463">
+    <state x="421" y="190" width="598" height="490" key="find.popup" timestamp="1604460152151">
       <screen x="0" y="23" width="1440" height="825" />
     </state>
-    <state x="421" y="190" width="598" height="490" key="find.popup/0.23.1440.825@0.23.1440.825" timestamp="1603276551463" />
+    <state x="421" y="190" width="598" height="490" key="find.popup/0.23.1440.825/-1920.-46.1920.1057@0.23.1440.825" timestamp="1604460152151" />
+    <state x="421" y="190" width="598" height="490" key="find.popup/0.23.1440.825@0.23.1440.825" timestamp="1603693034654" />
     <state x="385" y="172" width="670" height="676" key="search.everywhere.popup" timestamp="1603352874527">
       <screen x="0" y="23" width="1440" height="825" />
     </state>

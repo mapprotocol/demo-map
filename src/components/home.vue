@@ -23,7 +23,7 @@
       <!--        链接部分-->
       <div class="home-top">
         <div class="home-top-content">
-          <a target="_blank" href="https://mouse.mapscan.io" class="home-a">Mouse chain,ChainID:1000</a>
+          <a target="_blank" href="http://39.98.50.87:8000/" class="home-a">Mouse chain,ChainID:1000</a>
           <div class="home-get">
             <div class="home-get-text">faucet:</div>
             <input v-model="mouse" class="home-get-input">
@@ -31,7 +31,7 @@
           </div>
         </div>
         <div class="home-top-content">
-          <a target="_blank" href="https://duck.mapscan.io" class="home-a">Duck chain,ChainID:1001</a>
+          <a target="_blank" href="http://39.98.50.87:8001/" class="home-a">Duck chain,ChainID:1001</a>
           <div class="home-get">
             <div class="home-get-text">faucet:</div>
             <input v-model="duck" class="home-get-input">
