@@ -27,7 +27,7 @@
           <div class="home-get">
             <div class="home-get-text">faucet:</div>
             <input v-model="mouse" class="home-get-input">
-            <button class="home-get-btn" @click="actionGetMouse()">获取</button>
+            <button class="home-get-btn" @click="actionGetMouse()">Cliam</button>
           </div>
         </div>
         <div class="home-top-content">
@@ -35,7 +35,7 @@
           <div class="home-get">
             <div class="home-get-text">faucet:</div>
             <input v-model="duck" class="home-get-input">
-            <button class="home-get-btn" @click="actionGetDuck()">获取</button>
+            <button class="home-get-btn" @click="actionGetDuck()">Cliam</button>
           </div>
         </div>
       </div>
